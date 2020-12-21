@@ -1,4 +1,4 @@
-package Lesson1;
+package Lesson1_1;
 
 public class RefTypeExample {
     public String getString() {

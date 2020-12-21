@@ -1,8 +1,4 @@
-package Lesson1;
-
-import sun.font.FontRunIterator;
-
-import java.lang.reflect.Array;
+package Lesson1_1;
 
 public class App {
     public static void main(String[] args) {

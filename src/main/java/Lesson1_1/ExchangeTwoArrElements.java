@@ -1,4 +1,4 @@
-package Lesson1;
+package Lesson1_1;
 
 public  class ExchangeTwoArrElements <T>{
     public void Exchange(T[] objArr, int a, int b) {
