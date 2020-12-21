@@ -1,5 +1,7 @@
 package Lesson1;
 
+import sun.font.FontRunIterator;
+
 import java.lang.reflect.Array;
 
 public class App {
@@ -10,22 +12,26 @@ public class App {
         refArray[2] = new RefTypeExample("c", 3);
 
         int[] intArr={1,2,3};
-        System.out.println(intArr.getClass().getSuperclass());
         String[] stringArr={"1","2"};
 
-        RefTypeArray refTypeArray = new RefTypeArray<RefTypeExample>(refArray);
 
-        ExchangeTwoElementsOfRefTypeArray(refTypeArray,0,1);
+        System.out.println ("До ");
+
+        for (int i = 0; i <refArray.length ; i++) {
+            System.out.println(refArray[i].getString()+refArray[i].getInteger());
+        }
+
+        ExchangeTwoArrElements<RefTypeExample> ex= new ExchangeTwoArrElements();
+        ex.Exchange(refArray,0,1);
+
+        System.out.println ("После ");
+        for (int i = 0; i <refArray.length ; i++) {
+            System.out.println(refArray[i].getString()+refArray[i].getInteger());
+        }
 
     }
 
 
-    public static <T> void ExchangeTwoElementsOfRefTypeArray(T[] objArr, int a, int b) {
-        T tmp = objArr[a];
-        objArr[a]=objArr[b];
-        objArr[b]=tmp;
-
-    }
 
 
 }
