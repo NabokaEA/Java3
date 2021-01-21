@@ -7,9 +7,24 @@ public class Car implements Runnable{
     static {
         CARS_COUNT = 0;
     }
+
+    public Race getRace() {
+        return race;
+    }
+
     private Race race;
     private String name;
     private int speed;
+
+    public boolean isWinner() {
+        return isWinner;
+    }
+
+    public void setWinner(boolean winner) {
+        isWinner = winner;
+    }
+
+    private boolean isWinner=false;
     private CyclicBarrier cyclicBarrier;
     public String getName() {
         return name;
