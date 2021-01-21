@@ -9,7 +9,7 @@ public class App {
 
         int[] arr = new int[]{1, 2, 3};
 
-       ArrayList arr1= arrList(<int> arr);
+       //ArrayList arr1= arrList(<int> arr);
 
 
     }
